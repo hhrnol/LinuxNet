@@ -80,7 +80,9 @@ host client2 {
   hardware ethernet 08:00:27:2e:d9:69;
   fixed-address 10.11.76.1;
 }
-
+</pre>
+###Packet Forwarding
+<pre>
 sudo su
 fgrep -v net.ipv4.ip_forward /etc/sysctl.conf > /etc/sysctl.conf.tmp
 echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.conf.tmp
